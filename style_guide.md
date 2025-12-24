@@ -134,12 +134,13 @@ When using Kubernetes-specific terms, use the canonical terminology. Introduce s
 
 Show the command output to help the reader follow along and validate they are receiving the expected output.
 
-
+Input:
 
 ```shell
 kind create cluster
 ```
 
+Output:
 
 ```shell
 Creating cluster "kind" ...
