@@ -13,7 +13,7 @@ Use the following style guide for all writing assignments.
 Following these guidelines ensures Spectro Cloud documentation is clear, professional, and accessible to a broad technical audience.
 
 ## Voice
-'Previous Voice and Tense sections contained errors, such as referrring to you as a noun and incorrect punctuation in Use, we, when. Also, awkward phrasing, such as avoid hidiing using it is recommended, are unclear and examples of bad grammar.'
+<!--Previous Voice and Tense sections contained errors, such as referrring to you as a noun and incorrect punctuation in Use, we, when. Also, awkward phrasing, such as avoid hidiing using it is recommended, are unclear and examples of bad grammar.-->
 
 Use the **active voice** whenever possible. Active voice is more direct, easier to read, and usually shorter than passive constructions.
 
@@ -60,7 +60,7 @@ Get Started with Palette App Mode | Quick start with Palette app mode
 
 ## Acronyms
 
-'The previous description of when to use acronyms was not enitrely accurate. The examples indicated camel case, but were actually mixed case, not camel case. There was some confusion between what an acronym is and how they should be written.'
+<!--The previous description of when to use acronyms was not enitrely accurate. The examples indicated camel case, but were actually mixed case, not camel case. There was some confusion between what an acronym is and how they should be written.-->
 
 Define acronyms on first use by spelling out the term followed by the acronym in parentheses. Use the acronym consistently after it is defined.
 
@@ -80,7 +80,7 @@ Dynamic-Link Library (DLL). | dynamic-link library (DLL).
 ---
 
 ## Gender
-'The previous description on gender-neutral pronouns was not accurate in its descriptions, since him/hehis/she/her are not nouns, but rather pronouns.' 
+<!--The previous description on gender-neutral pronouns was not accurate in its descriptions, since him/hehis/she/her are not nouns, but rather pronouns.--> 
 
 Use **gender-neutral language**.
 
@@ -97,7 +97,7 @@ When an administrator updates the cluster, they should review the release notes.
 
 ## Inclusive Language
 
-'The previous examples of ableism were not accurate. Using verbs like run and jump are not examples of ableist language. Ableism is defined by using a disability or medical condition intended to be insulting.'
+<!--The previous examples of ableism were not accurate. Using verbs like run and jump are not examples of ableist language. Ableism is defined by using a disability or medical condition intended to be insulting.-->
 
 Avoid language that uses disability or medical conditions as metaphors or insults. Such language can reinforce bias and cause harm.
 
@@ -113,7 +113,7 @@ The feature is unavailable in this release. | The feature is crippled in this re
 ---
 
 ## Terminology and Clarity
-'This replaces the section on Simplified English. There were several grammatical errors in the previous section where the examples focused on replacing words without the intended effect on clarity.'
+<!--This replaces the section on Simplified English. There were several grammatical errors in the previous section where the examples focused on replacing words without the intended effect on clarity.-->
 
 Prefer precise, literal language over idiomatic expressions. Clear wording improves accessibility for global audiences and reduces ambiguity.
 
