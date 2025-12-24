@@ -2,87 +2,145 @@
 
 Use the following style guide for all writing assignments.
 
-### Simplified English
+## Summary 
 
-Use simple English in Spectro Cloud material unless explicitly stated otherwise in this guide. 
-More importantly, simple language helps the reader retain information and more readily understand concepts. 
+- Prefer active voice and present tense  
+- Address the reader directly  
+- Use consistent headline and acronym styles  
+- Write inclusively and precisely  
+- Avoid unexplained jargon and idiomatic language  
 
-|   Good  ✅                                                          | Bad ❌                                                                   |
-|--------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| The core Kubernetes API is flexible and can also be extended to support custom resources. | The interior Kubernetes API is malleable and provides the capability for consumers to extended custom logic and inject custom logical resources. |
-| Choose a node to be the cluster master node.                              | Designate a node to be the cluster master node.                                   |
-| Drain the node before a version upgrade.                                  | It is essential to drain the node prior to a version upgrade.                     |  
+Following these guidelines ensures Spectro Cloud documentation is clear, professional, and accessible to a broad technical audience.
 
+## Voice
+'Previous Voice and Tense sections contained errors, such as referrring to you as a noun and incorrect punctuation in Use, we, when. Also, awkward phrasing, such as avoid hidiing using it is recommended, are unclear and examples of bad grammar.'
 
-### Present Tense
+Use the **active voice** whenever possible. Active voice is more direct, easier to read, and usually shorter than passive constructions.
 
-Users read documentation to perform tasks or gather information. For users, these activities take place in their present, so the present tense is proper in most cases. Additionally, the present tense is simpler to read than the past or future tense.
+Address the reader directly when writing instructional content. Use the pronoun *you*.
 
-### Voice
+Use *we* when providing recommendations or guidance. This approach takes ownership of the guidance and avoids vague or impersonal constructions such as “it is recommended.”
 
+**Good ✅** | **Bad ❌**
+---|---
+Use the `kubectl` CLI to create a namespace named `mgmt`. | The `kubectl` CLI can be used to create namespaces named `mgmt`.
+Before upgrading, review the release notes for deprecation notices. | Release notes should be carefully verified for deprecation notices prior to an upgrade.
+We recommend you deploy Palette Enterprise in a highly available configuration of at least three nodes. | It is recommended to deploy Palette Enterprise in a highly available configuration of at least three nodes.
 
-Use the active voice whenever possible. The active voice is usually more direct and vigorous than the passive. When you write a sentence in the active voice, it is also usually shorter than in the passive voice.
+## Tense
 
-Address the user when creating text content. Use the noun, you. Use, we, when providing the user with recommendations. We want to take ownership of our guidance, so avoid hiding using “it is recommended.”
+Use the **present tense** whenever possible.
 
-| Good  ✅                                                              | Bad ❌                                                             |
-|-------------------------------------------------------------------|-----------------------------------------------------------------|
-| Use the kubectl CLI to create a namespace titled “mgmt”.                                | The kubectl CLI can be used to create namespaces titled “mgmt”                         |
-| Prior to upgrading, ensure you have carefully reviewed the release notes for deprecation notices.                          | Release notes should be carefully verified for deprecation notices prior to an upgrade.                                         |
-|We recommended deploying Palette Enterprise in a highly-available configuration of at least three nodes.                           | It is recommended to deploy Palette Enterprise in a highly-available configuration of at least three nodes.                          ||
+Users read documentation while performing tasks or gathering information. Because these actions occur in the user’s present, present tense is clearer and easier to understand than past or future tense.
 
-### Ableist Language
+Use past or future tense only when describing historical events or delayed behavior.
 
-Don't use ableist language. This avoids biases and harm when discussing disability and accessibility. Ableist language includes words or phrases such as crazy, insane, blind to or blind eye to, cripple, dumb, and others. This also includes action verbs with physical traits like jump and run. Choose alternative words depending on the context.
+**Good ✅** | **Bad ❌**
+---|---
+The command drains the node and evicts running pods. | The command will drain the node and will evict running pods.
+The controller retries after 30 seconds. | The controller will retry after 30 seconds.
 
-| Good  ✅                                                              | Bad ❌                                                             |
-|-------------------------------------------------------------------|-----------------------------------------------------------------|
-| Review all the active containers.                                 | See if all the containers are running.                           |
-| Navigate to the tab titled, Settings.                             | Jump to the next tab.                                            |
-| Issue the command kubectl get pods.                               | Run the command kubectl get pods.                                |
+## Headline Style
+'The previous version has a grammatical mistake in the mention of nouns starting with an -ing and gerunds. Gerunds are not nouns and gerunds themselves are not wrong to use, as there may be some exceptions such as Observability and Monitoring that may require its use. The previous examples also introduced ambiguity, such as in Quick Start, where the noun phrase Quick Start is a special case rather than a pattern for a conceptual topic.'
 
+Use **title case** for headings.
 
-### Acronyms
+For **task-based headings**, start with an imperative verb. Avoid gerund forms (*-ing*) for task titles.
 
-Use title case when defining an acronym. Use the same rules that apply to headline styles. Some acronyms are in nature written in a camel case. Example: IaaS, kCh, SaaS.
+For **conceptual or reference headings**, start with a noun or noun phrase.
 
-Although some acronyms are widely understood and preferred to the spelt-out term, others are not well known or are familiar only to a specific group of customers. Define the acronym first.
+**Good ✅** | **Bad ❌**
+---|---
+Deploy a Pack Registry Server | Deploying a Pack Registry Server
+Access Audit Logs | Accessing Audit Logs
+Pack Registry Server Architecture | Architecting the Pack Registry Server
+Get Started with Palette App Mode | Quick start with Palette app mode
 
-The exception is when an acronym will appear only once in your content. Spell out the term. Don't introduce it in parentheses after the spelt-out version. If the spelt-out term and acronym are needed for metadata, then it is okay to use both.
+---
 
-| Good ✅               | Bad ❌                 |
-|--------------------|----------------------|
-| Boot the Virtual Machine (VM).   | Boot the virtual machine (VM).     |
-| Boot all the Virtual Machines (VMs).   | Boot all the virtual machine (VMs).    |
-| This is called Infrastructure as a Service (IaaS).   | This is called infrastructure as a service (IaaS).     |
-| Dynamic-Link Library (DLL).   | dynamic-link library (DLL).     | 
+## Acronyms
 
-### Gender
+'The previous description of when to use acronyms was not enitrely accurate. The examples indicated camel case, but were actually mixed case, not camel case. There was some confusion between what an acronym is and how they should be written.'
 
-Use gender-neutral pronouns. Avoid the following nouns he, him, his, she, or her as gender-neutral pronouns. The same applies to he/she or other such punctuational approaches. Use the singular they.
+Define acronyms on first use by spelling out the term followed by the acronym in parentheses. Use the acronym consistently after it is defined.
 
-### Headline Style
+If an acronym appears only once, spell out the term and do not introduce the acronym.
 
-Use title case for headings. If the heading is conceptual or non-task based, then start with a noun. Avoid using a noun that starts with an -ing. The same applies to gerunds.
+Some acronyms use mixed case by convention (for example, *IaaS*, *SaaS*). Preserve the standard casing.
 
-| Good  ✅                                                              | Bad ❌                                                             |
-|-------------------------------------------------------------------|-----------------------------------------------------------------|
-| Deploy a Pack Registry Server                                 | Deploying A Pack Registry Server                           |
-| Access Audit Logs                             | Accessing audit logs                                           |
-| Quick Start with Palette App Mode                              | Quick start with Palette app mode                               |
+If both the spelled-out term and acronym are required for metadata, it is acceptable to use both.
 
+**Good ✅** | **Bad ❌**
+---|---
+Boot the Virtual Machine (VM). | Boot the virtual machine (VM).
+Boot all the Virtual Machines (VMs). | Boot all the virtual machine (VMs).
+This is called Infrastructure as a Service (IaaS). | This is called infrastructure as a service (IaaS).
+Dynamic-Link Library (DLL). | dynamic-link library (DLL).
 
+---
+
+## Gender
+'The previous description on gender-neutral pronouns was not accurate in its descriptions, since him/hehis/she/her are not nouns, but rather pronouns.' 
+
+Use **gender-neutral language**.
+
+When referring to a person whose gender is unknown or irrelevant, avoid gendered pronouns such as *he*, *him*, *his*, *she*, or *her*. Do not use paired constructions such as *he/she*.
+
+Use the singular *they* instead.
+
+**Good ✅** | **Bad ❌**
+---|---
+If a user forgets their password, they can reset it from the login page. | If a user forgets his or her password, he/she can reset it from the login page.
+When an administrator updates the cluster, they should review the release notes. | When an administrator updates the cluster, he should review the release notes.
+
+---
+
+## Inclusive Language
+
+'The previous examples of ableism were not accurate. Using verbs like run and jump are not examples of ableist language. Ableism is defined by using a disability or medical condition intended to be insulting.'
+
+Avoid language that uses disability or medical conditions as metaphors or insults. Such language can reinforce bias and cause harm.
+
+Examples of ableist language include terms such as *crazy*, *insane*, *cripple*, *dumb*, and phrases like *blind to* or *turn a blind eye*.
+
+Choose neutral alternatives that describe behavior or state without referencing disability.
+
+**Good ✅** | **Bad ❌**
+---|---
+Unexpected behavior occurs when the configuration is invalid. | The configuration is crazy.
+The feature is unavailable in this release. | The feature is crippled in this release.
+
+---
+
+## Terminology and Clarity
+'This replaces the section on Simplified English. There were several grammatical errors in the previous section where the examples focused on replacing words without the intended effect on clarity.'
+
+Prefer precise, literal language over idiomatic expressions. Clear wording improves accessibility for global audiences and reduces ambiguity.
+
+**Good ✅** | **Bad ❌**
+---|---
+Go to the Settings tab. | Jump to the Settings tab.
+Issue the command `kubectl get pods`. | Run the command `kubectl get pods`.
+
+## Kubernetes-Specific Terminology
+
+When using Kubernetes-specific terms, use the canonical terminology. Introduce specialized terms with a brief explanation on first use when appropriate.
+
+**Example:**
+
+> Drain the node (evict all running pods and prevent new scheduling) before performing a version upgrade.
 
 ### Command Output
 
 Show the command output to help the reader follow along and validate they are receiving the expected output.
 
-
+Input:
 
 ```shell
 kind create cluster
 ```
 
+Output:
 
 ```shell
 Creating cluster "kind" ...
