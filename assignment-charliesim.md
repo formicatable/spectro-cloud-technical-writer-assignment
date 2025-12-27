@@ -30,10 +30,10 @@ In this example, the command targets the default namespace.
 
 **Output:**
 ```shell
-NAME                                READY   STATUS    RESTARTS   AGE
-api-gateway-7c4f89b6df-xj2n8   1/1     Running   0          2d
-miner-worker-5bcd77d8dc-hqt46   0/1     Error     3          1d
-db-replica-6f8d99f7bd-pz4lm    1/1     Running   1          5d
+NAME                                   READY   STATUS    RESTARTS   AGE
+api-gateway-7c4f89b6df-xj2n8            1/1     Running   0          2d
+miner-worker-5bcd77d8dc-hqt46           0/1     Error     3          1d
+db-replica-6f8d99f7bd-pz4lm              1/1     Running   1          5d
 ```
 
 For more information on additional flags you can use with `kubectl get pods`, see [Getting Started: get](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#get).

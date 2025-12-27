@@ -41,7 +41,7 @@ The command drains the node and evicts running pods. | The command will drain th
 The controller retries after 30 seconds. | The controller will retry after 30 seconds.
 
 ## Headline Style
-'The previous version has a grammatical mistake in the mention of nouns starting with an -ing and gerunds. Gerunds are not nouns and gerunds themselves are not wrong to use, as there may be some exceptions such as Observability and Monitoring that may require its use. The previous examples also introduced ambiguity, such as in Quick Start, where the noun phrase Quick Start is a special case rather than a pattern for a conceptual topic.'
+<!--The previous version has a grammatical mistake in the mention of nouns starting with an -ing and gerunds. Gerunds are not nouns and gerunds themselves are not wrong to use, as there may be some exceptions such as Observability and Monitoring that may require its use. The previous examples also introduced ambiguity, such as in Quick Start, where the noun phrase Quick Start is a special case rather than a pattern for a conceptual topic.-->
 
 Use **title case** for headings.
 
