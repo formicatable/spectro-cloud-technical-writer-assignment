@@ -7,10 +7,12 @@ This reference page describes commonly used `kubectl` debugging commands in the 
 ## Overview
 
 Debugging Kubernetes workloads typically starts with identifying the affected resources, reviewing logs to identify errors, and examining container status. The following `kubectl` commands are commonly used during this process:
-- `kubectl get pods` - List pods and their status
-- `kubectl logs` - Retrieve container logs
-- `kubectl exec` - Performs commands inside containers
-- `kubectl debug` - Create debug containers
+| Command            | Purpose                               |
+|--------------------|----------------------------------------|
+| `kubectl get pods` | List pods and their status              |
+| `kubectl logs`     | Retrieve container logs                 |
+| `kubectl exec`     | Execute commands inside containers      |
+| `kubectl debug`    | Create debug containers                 |
 
 ## Pod Status
 
@@ -40,7 +42,7 @@ For more information on additional flags you can use with `kubectl get pods`, se
 
 ## Logs
 
-You use`kubectl logs` to retrieve container logs from a specific pod so that you can review the standard output (stdout) and standard error messages (stderr) for initial troubleshooting.
+You use `kubectl logs` to retrieve container logs from a specific pod so that you can review the standard output (stdout) and standard error messages (stderr) for initial troubleshooting.
 
 **Syntax:**
 ```shell
@@ -86,7 +88,7 @@ root@default:/app#
 
 For more information on flags you can use with the `exec` command, see [Working with Apps: exec](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#exec).
 
-## Temporary Containers for Debugging
+## Debug Containers
 
 `kubectl debug` creates ephemeral (temporary) containers or pods. This is useful for scenarios such as pods that crash on startup, connectivity issues, or performance-related investigations.
 
