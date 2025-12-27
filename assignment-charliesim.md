@@ -67,7 +67,7 @@ For more information on flags you can use with the `kubectl logs` command, see [
 
 ## Container Access
 
-You use `kubectl exec` to execute commands inside a container. By executing commands, such as `env | grep`, `curl`, `cat`, and `df`, you can check environment variables, test network connectivity, and review log files not captured by `kubectl logs`.
+When logs aren't enough, use `kubectl exec` to execute commands inside a container. By executing commands, such as `env | grep`, `curl`, `cat`, and `df`, you can check environment variables, test network connectivity, and review log files not captured by `kubectl logs`.
 
 **Syntax:**
 ```shell
@@ -88,7 +88,7 @@ For more information on flags you can use with the `exec` command, see [Working 
 
 ## Debug Containers
 
-`kubectl debug` creates ephemeral (temporary) containers or pods. This is useful for scenarios such as pods that crash on startup, connectivity issues, or performance-related investigations.
+For pods that crash on startup, use `kubectl debug` to create an ephemeral (temporary) container attached to the target pod for additional troubleshooting.
 
 **Syntax:**
 ```shell
