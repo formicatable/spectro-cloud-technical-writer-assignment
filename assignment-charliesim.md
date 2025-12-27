@@ -1,8 +1,8 @@
-# Debug Commands in Kubernetes
+# Kubernetes Debug Commands
 
 ## Scope
 
-This reference page describes commonly used `kubectl` debugging commands in the Kubernetes command-line interface (CLI).  It focuses on when and why to use specific commands, rather than providing a complete command reference. For an in-depth understanding of all commands, see [kubectl documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-getting-started-strong-).
+This reference page describes commonly used `kubectl` debugging commands in the Kubernetes command-line interface (CLI).  It focuses on when and why to use specific commands, rather than providing a complete command reference.
 
 ## Overview
 
@@ -79,8 +79,6 @@ kubectl exec -it <pod-name> --namespace <namespace-name> -- <command>
 kubectl exec -it nimbus-3 --namespace default -- /bin/bash
 ```
 
-The `--it` flag enables interactive mode so you can execute commands.
-
 **Output:**
 ```shell
 root@default:/app#
@@ -106,7 +104,7 @@ kubectl debug nimbus-3 --namespace default --image=ubuntu:22.04 --target=hobus
 ```shell
 Defaulting debug container name to debugger-abc123.
 If you don't see a command prompt, try pressing enter.
-root@default:/#
+root@nimbus-3:/#
 ```
 
 For more information on flags you can use with the `kubectl debug` command, see [App Management: debug](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#debug).
